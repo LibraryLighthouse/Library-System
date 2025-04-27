@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#A28D4F</color>
+    <color name="menu_bar">#3DBFBD</color>
 </resources>
