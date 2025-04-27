@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btnHome"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="411dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="734dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
+            <!-- Top right icon -->
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="wrap_content"
@@ -32,81 +27,65 @@
                 android:layout_marginEnd="16dp"
                 app:srcCompat="@drawable/right_icons" />
 
+            <!-- Welcome Texts -->
             <LinearLayout
-                android:layout_width="379dp"
-                android:layout_height="102dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_marginBottom="20dp"
-                android:orientation="vertical">
+                android:gravity="start">
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="16dp"
                     android:text="Welcome Back"
                     android:textColor="@color/white"
                     android:textSize="24sp"
-                    android:textStyle="normal" />
+                    android:layout_marginTop="20dp" />
 
                 <TextView
                     android:id="@+id/txtname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="left"
                     android:text="Charitha"
                     android:textColor="@color/green"
-                    android:textSize="24sp"
-                    android:textStyle="normal" />
-
+                    android:textSize="24sp" />
             </LinearLayout>
 
+            <!-- Search Bar -->
             <LinearLayout
-                android:id="@+id/layoutsearch"
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <LinearLayout
+                <SearchView
+                    android:id="@+id/searchView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:orientation="horizontal">
-
-                    <SearchView
-
-                        android:id="@+id/searchView"
-                        android:layout_width="match_parent"
-                        android:layout_height="46dp"
-                        android:layout_marginEnd="16dp"
-                        android:background="@drawable/background_ouline"
-                        android:paddingStart="10dp" />
-
-                </LinearLayout>
-
+                    android:layout_height="46dp"
+                    android:background="@drawable/background_ouline"
+                    android:paddingStart="10dp" />
             </LinearLayout>
 
+            <!-- Buttons Section -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:layout_marginTop="20dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
+                    <!-- Book Button -->
                     <FrameLayout
                         android:layout_width="142.5dp"
                         android:layout_height="150dp"
                         android:layout_margin="10dp"
                         android:background="@drawable/background_ouline"
-                        android:backgroundTintMode="screen"
                         android:elevation="8dp">
 
                         <Button
@@ -122,12 +101,12 @@
                             app:iconSize="50dp" />
                     </FrameLayout>
 
+                    <!-- Member Button -->
                     <FrameLayout
                         android:layout_width="142.5dp"
                         android:layout_height="150dp"
                         android:layout_margin="10dp"
                         android:background="@drawable/background_ouline"
-                        android:backgroundTintMode="screen"
                         android:elevation="8dp">
 
                         <Button
@@ -149,12 +128,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
+                    <!-- Lend Button -->
                     <FrameLayout
                         android:layout_width="142.5dp"
                         android:layout_height="150dp"
                         android:layout_margin="10dp"
                         android:background="@drawable/background_ouline"
-                        android:backgroundTintMode="screen"
                         android:elevation="8dp">
 
                         <Button
@@ -170,12 +149,12 @@
                             app:iconSize="55dp" />
                     </FrameLayout>
 
+                    <!-- Return Button -->
                     <FrameLayout
                         android:layout_width="142.5dp"
                         android:layout_height="150dp"
                         android:layout_margin="10dp"
                         android:background="@drawable/background_ouline"
-                        android:backgroundTintMode="screen"
                         android:elevation="8dp">
 
                         <Button
@@ -196,6 +175,6 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
