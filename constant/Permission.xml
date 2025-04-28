@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Permissions>
+    <Permission>
+        <Name>Read</Name>
+        <Description>Allows read-only access to resources.</Description>
+    </Permission>
+    <Permission>
+        <Name>Write</Name>
+        <Description>Allows modification of resources.</Description>
+    </Permission>
+    <Permission>
+        <Name>Delete</Name>
+        <Description>Allows deletion of resources.</Description>
+    </Permission>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+</Permissions>
