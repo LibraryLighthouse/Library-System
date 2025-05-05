@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:id="@+id/bookList"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".BookActivity"
+    tools:context=".UI.Book.BookActivity"
     android:padding="16dp"
     android:background="#FFFFFF">
 
