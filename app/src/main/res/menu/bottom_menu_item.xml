@@ -11,8 +11,14 @@
         android:icon="@drawable/icons8_search_30"
         android:title="@string/search" />
     <item
+        android:id="@+id/nav_library"
+        android:enabled="true"
+        android:icon="@drawable/baseline_account_balance_24"
+        android:title="@string/account_user" />
+    <item
         android:id="@+id/nav_user"
         android:enabled="true"
         android:icon="@drawable/account_user"
         android:title="@string/account_user" />
+
 </menu>
