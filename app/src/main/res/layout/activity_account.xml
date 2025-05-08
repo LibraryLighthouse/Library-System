@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F9FB"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Header -->
+            <TextView
+                android:text="📘 LibraryApp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp" />
+
+            <!-- My Profile title -->
+            <TextView
+                android:text="My Profile"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Profile Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/profile_card_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_background" />
+
+                <TextView
+                    android:text="Alex Johnson"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:text="STU-2023-1056"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:text="⏱ View Borrowing History"
+                    android:backgroundTint="#1A2B4C"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Info Rows -->
+                <TextView android:text="✉ alex.johnson@example.com"
+                    android:padding="8dp" />
+
+                <TextView android:text="📞 +1 (555) 123-4567"
+                    android:padding="8dp" />
+
+                <TextView android:text="📅 Member since September 15, 2021"
+                    android:padding="8dp" />
+            </LinearLayout>
+
+            <!-- Profile Info Section -->
+            <TextView
+                android:text="Profile Information"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Profile Fields -->
+            <TextView android:text="Full Name"
+                android:textStyle="bold" />
+            <EditText
+                android:text="Alex Johnson"
+                android:enabled="false"
+                android:background="@drawable/rounded_input_bg" />
+
+            <TextView android:text="Email Address"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+            <EditText
+                android:text="alex.johnson@example.com"
+                android:enabled="false"
+                android:background="@drawable/rounded_input_bg" />
+
+            <TextView android:text="Student ID"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+            <EditText
+                android:text="STU-2023-1056"
+                android:enabled="false"
+                android:background="@drawable/rounded_input_bg" />
+
+            <TextView android:text="Phone Number"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+            <EditText
+                android:text="+1 (555) 123-4567"
+                android:enabled="false"
+                android:background="@drawable/rounded_input_bg" />
+
+            <TextView android:text="Member Since"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+            <EditText
+                android:text="September 15, 2021"
+                android:enabled="false"
+                android:background="@drawable/rounded_input_bg" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

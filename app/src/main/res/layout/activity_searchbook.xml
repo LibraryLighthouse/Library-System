@@ -32,8 +32,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/logo" />
+
             <TextView
-                android:id="@+id/textViewTitle"
+                android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -56,14 +57,14 @@
                     android:orientation="horizontal">
 
                     <SearchView
+
                         android:id="@+id/searchView"
                         android:layout_width="match_parent"
                         android:layout_height="46dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
                         android:background="@drawable/button_background_round_normal"
-                        android:backgroundTint="#A28D4F" />
-
+                        android:backgroundTint="#A28D4F"
 
 
 
@@ -81,7 +82,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:layout_marginTop="-240dp"
+                    android:layout_marginTop="-340dp"
                     android:orientation="horizontal">
 
 
@@ -89,6 +90,7 @@
                         android:layout_width="142.5dp"
                         android:layout_height="110dp"
                         android:layout_margin="10dp"
+                        android:background="@drawable/background_ouline"
                         android:backgroundTintMode="screen"
                         android:elevation="8dp">
 
@@ -101,7 +103,8 @@
                             android:textSize="14sp"
                             app:icon="@drawable/searchicon"
                             app:iconGravity="textTop"
-                            app:iconSize="30dp" />
+
+                            app:iconSize="50dp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -120,7 +123,7 @@
                             android:textSize="14sp"
                             app:icon="@drawable/returnbookicon"
                             app:iconGravity="textTop"
-                            app:iconSize="30dp" />
+                            app:iconSize="50dp" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -147,7 +150,8 @@
                             android:textSize="14sp"
                             app:icon="@drawable/borrowbookicon"
                             app:iconGravity="textTop"
-                            app:iconSize="30dp" />
+
+                            app:iconSize="55dp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -166,125 +170,8 @@
                             android:textSize="14sp"
                             app:icon="@drawable/username"
                             app:iconGravity="textTop"
-                            app:iconSize="30dp" />
-                    </FrameLayout>
-                </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-8dp"
-                    android:orientation="horizontal">
-
-                    <FrameLayout
-                        android:layout_width="142.5dp"
-                        android:layout_height="20dp"
-                        android:layout_margin="10dp"
-                        android:backgroundTintMode="screen"
-                        android:elevation="8dp">
-                        <TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:layout_marginTop="-5dp"
-                            android:text="Popular Books"
-                            android:textColor="@color/white"
-                            android:textSize="20sp"
-                            android:textStyle="normal" />
-
-                    </FrameLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-10dp"
-                    android:orientation="horizontal">
-
-
-                    <FrameLayout
-                        android:layout_width="142.5dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="10dp"
-                        android:backgroundTintMode="screen"
-                        android:elevation="8dp">
-
-                        <Button
-                            android:id="@+id/btnborrowbook_popular1"
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:backgroundTint="#00262C34"
-                            android:text="Borrow"
-                            android:textSize="14sp"
-                            app:icon="@drawable/book2"
-                            app:iconGravity="textTop"
-                            app:iconSize="95dp" />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:layout_width="142.5dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="10dp"
-                        android:backgroundTintMode="screen"
-                        android:elevation="8dp">
-
-                        <ImageView
-                            android:src="@drawable/book1"
-                            android:id="@+id/btnreturn_popular3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:backgroundTint="#00262C34"
-                            android:text="Account"
-                            android:textSize="14sp"
-                            app:icon="@drawable/book1"
-                            app:iconGravity="textTop"
-                            app:iconSize="95dp" />
-                    </FrameLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="-10dp"
-                    android:orientation="horizontal">
-
-                    <FrameLayout
-                        android:layout_width="142.5dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="10dp"
-                        android:backgroundTintMode="screen"
-                        android:elevation="8dp">
-
-                        <ImageView
-                            android:src="@drawable/book1"
-                            android:id="@+id/btnreturnbook_popular2"
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:backgroundTint="#00262C34"
-                            android:text="Borrow"
-                            android:textSize="14sp"
-                            app:icon="@drawable/book2"
-                            app:iconGravity="textTop"
-                            app:iconSize="95dp" />
-                    </FrameLayout>
-
-                    <FrameLayout
-                        android:layout_width="142.5dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="10dp"
-                        android:backgroundTintMode="screen"
-                        android:elevation="8dp">
-
-                        <Button
-                            android:id="@+id/btnreturn_popular4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:backgroundTint="#00262C34"
-                            android:text="Account"
-                            android:textSize="14sp"
-                            app:icon="@drawable/book2"
-                            app:iconGravity="textTop"
-                            app:iconSize="95dp" />
+                            app:iconSize="55dp" />
                     </FrameLayout>
                 </LinearLayout>
 
@@ -334,7 +221,8 @@
                     app:icon="@drawable/homeicon"
                     app:iconGravity="textTop"
                     app:iconPadding="3dp"
-                    app:iconSize="30dp"/>
+                    app:iconSize="30dp"
+                    app:iconTint="@color/green" />
             </FrameLayout>
 
             <FrameLayout
