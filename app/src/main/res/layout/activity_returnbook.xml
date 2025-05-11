@@ -50,7 +50,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="12dp"
-                android:background="@drawable/book_card_bg"
                 android:layout_marginBottom="16dp">
 
                 <ImageView
@@ -79,14 +78,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp" />
-
-                    <TextView
-                        android:text="⚠️ Overdue by 705 days"
-                        android:textColor="#C62828"
-                        android:textSize="13sp"
-                        android:background="@drawable/overdue_badge"
-                        android:padding="4dp"
-                        android:layout_marginTop="6dp" />
 
                     <Button
                         android:text="✔ Return Book"
@@ -101,7 +92,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="12dp"
-                android:background="@drawable/book_card_bg"
                 android:layout_marginBottom="16dp">
 
                 <ImageView
@@ -135,7 +125,6 @@
                         android:text="⚠️ Overdue by 705 days"
                         android:textColor="#C62828"
                         android:textSize="13sp"
-                        android:background="@drawable/overdue_badge"
                         android:padding="4dp"
                         android:layout_marginTop="6dp" />
 
