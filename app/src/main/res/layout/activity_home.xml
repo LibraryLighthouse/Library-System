@@ -57,8 +57,8 @@
 
                     <SearchView
                         android:id="@+id/searchView"
-                        android:layout_width="match_parent"
-                        android:layout_height="46dp"
+                        android:layout_width="375dp"
+                        android:layout_height="37dp"
                         android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
                         android:background="@drawable/button_background_round_normal"
@@ -208,7 +208,7 @@
                         android:backgroundTintMode="screen"
                         android:elevation="8dp">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/btnborrowbook_popular1"
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
@@ -216,6 +216,7 @@
                             android:text="Borrow"
                             android:textSize="14sp"
                             app:icon="@drawable/book2"
+                            android:src="@drawable/graphql"
                             app:iconGravity="textTop"
                             app:iconSize="95dp" />
                     </FrameLayout>
@@ -228,7 +229,7 @@
                         android:elevation="8dp">
 
                         <ImageView
-                            android:src="@drawable/book1"
+                            android:src="@drawable/graphql"
                             android:id="@+id/btnreturn_popular3"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -254,7 +255,7 @@
                         android:elevation="8dp">
 
                         <ImageView
-                            android:src="@drawable/book1"
+                            android:src="@drawable/graphql"
                             android:id="@+id/btnreturnbook_popular2"
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
@@ -273,12 +274,13 @@
                         android:backgroundTintMode="screen"
                         android:elevation="8dp">
 
-                        <Button
+                        <ImageView
                             android:id="@+id/btnreturn_popular4"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:backgroundTint="#00262C34"
                             android:text="Account"
+                            android:src="@drawable/graphql"
                             android:textSize="14sp"
                             app:icon="@drawable/book2"
                             app:iconGravity="textTop"

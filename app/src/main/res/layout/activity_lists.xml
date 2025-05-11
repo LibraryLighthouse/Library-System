@@ -122,7 +122,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="May 10, 2023    May 24, 2023"
+                android:text="@string/may_10_2023_may_24_2023"
                 android:textSize="12sp"
                 android:textColor="#D32F2F"
                 android:layout_marginBottom="4dp" />
@@ -130,7 +130,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="⚠ Overdue"
+                android:text="@string/overdue"
                 android:textColor="#D32F2F"
                 android:background="#FFEBEE"
                 android:padding="4dp"
