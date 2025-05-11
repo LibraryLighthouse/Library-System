@@ -16,4 +16,6 @@
     <string name="account_user" />
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="may_10_2023_may_24_2023">May 10, 2023 May 24, 2023</string>
+    <string name="overdue">⚠ Overdue</string>
 </resources>

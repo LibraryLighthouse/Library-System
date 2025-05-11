@@ -10,7 +10,7 @@
     <!-- App Header -->
     <ImageView
         android:id="@+id/imageView7"
-        app:srcCompat="@drawable/logo"
+        android:src="@drawable/logo"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:layout_gravity="center"
@@ -95,7 +95,7 @@
                         android:layout_width="60dp"
                         android:layout_height="90dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/book_placeholder" />
+                        android:src="@drawable/graphql" />
 
                     <LinearLayout
                         android:layout_width="0dp"
