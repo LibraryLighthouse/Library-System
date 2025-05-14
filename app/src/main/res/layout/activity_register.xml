@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/register"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/loadscreenbackground">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -25,18 +24,9 @@
 
             android:text="Create Your Account"
             android:textAlignment="textStart"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Please fill all details and create account"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="12sp" />
 
         <EditText
             android:id="@+id/txtname"
@@ -96,24 +86,6 @@
             android:textColor="#000000"
             android:textSize="14sp" />
 
-        <EditText
-            android:id="@+id/txtcomfirmpassword"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="16dp"
-            android:background="@drawable/button_background_round_normal"
-            android:backgroundTint="#E2E4E8"
-            android:drawableLeft="@drawable/passwordicon"
-            android:drawablePadding="10dp"
-            android:ems="10"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
-            android:paddingStart="20dp"
-            android:textColor="#000000"
-            android:textSize="14sp" />
 
         <Button
             android:id="@+id/btnregister"
@@ -144,7 +116,7 @@
                 android:layout_marginEnd="2dp"
                 android:text="Already have an account ? "
                 android:textAlignment="textEnd"
-                android:textColor="@color/white" />
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/btnswaplogin"
