@@ -99,7 +99,6 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_margin="4dp"
-                android:background="@drawable/otp_input_background"
                 android:gravity="center"
                 android:inputType="number"
                 android:maxLength="1"
