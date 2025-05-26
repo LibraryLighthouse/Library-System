@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/register"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -21,74 +22,79 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="128dp"
-
-            android:text="Create Your Account"
+            android:text="@string/create_your_account"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="RtlCompat" />
 
 
         <EditText
-            android:id="@+id/txtname"
+            android:id="@+id/btnTextName"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="16dp"
+            android:autofillHints=""
             android:background="@drawable/button_background_round_normal"
             android:backgroundTint="#E2E4E8"
             android:drawableStart="@drawable/username"
             android:drawablePadding="10dp"
             android:ems="10"
-            android:hint="Name"
+            android:hint="@string/name"
             android:inputType="text"
             android:paddingStart="20dp"
             android:textColor="#000000"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
 
 
         <EditText
-            android:id="@+id/txtemail"
+            android:id="@+id/btnTextEmail"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="16dp"
+            android:autofillHints=""
             android:background="@drawable/button_background_round_normal"
             android:backgroundTint="#E2E4E8"
             android:drawableStart="@drawable/emailicon"
             android:drawablePadding="10dp"
             android:ems="10"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:paddingStart="20dp"
             android:textColor="#000000"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
 
         <EditText
-            android:id="@+id/txtpassword"
+            android:id="@+id/btnTextPassword"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_gravity="center"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="16dp"
+            android:autofillHints=""
             android:background="@drawable/button_background_round_normal"
             android:backgroundTint="#E2E4E8"
             android:drawableStart="@drawable/passwordicon"
             android:drawablePadding="10dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingStart="20dp"
             android:textColor="#000000"
-            android:textSize="14sp" />
-
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
 
         <Button
-            android:id="@+id/btnregister"
+            android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_gravity="center"
@@ -96,7 +102,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="16dp"
             android:backgroundTint="#A28D4F"
-            android:text="SIGN UP"
+            android:text="@string/sign_up"
             android:textAlignment="center"
             android:textColor="#FFFFFF" />
 
@@ -114,19 +120,20 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginEnd="2dp"
-                android:text="Already have an account ? "
+                android:text="@string/already_have_an_account"
                 android:textAlignment="textEnd"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="RtlCompat" />
 
             <TextView
-                android:id="@+id/btnswaplogin"
+                android:id="@+id/btnToLogin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:clickable="true"
                 android:focusable="true"
-                android:text="Sign in"
+                android:text="@string/sign_in"
                 android:textColor="#A28D4F"
                 android:textStyle="bold" />
 

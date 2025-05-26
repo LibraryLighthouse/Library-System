@@ -25,4 +25,7 @@
     <string name="librarylighthouse">LibraryLighthouse</string>
     <string name="thriller">Thriller</string>
     <string name="get_otp">Get OTP</string>
+    <string name="create_your_account">Create Your Account</string>
+    <string name="name">Name</string>
+    <string name="already_have_an_account">Already have an account ?</string>
 </resources>
