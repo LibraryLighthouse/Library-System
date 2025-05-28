@@ -6,7 +6,6 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
-// Potentially other imports if User class is in a different package
 
 public interface ApiServices {
     @POST("/api/register")

@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
         email = textEmail.getText().toString();
         password = textPassword.getText().toString();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.21.233:8000/")
+                .baseUrl("http://192.168.31.206:8000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ApiServices apiServices = retrofit.create(ApiServices.class);
