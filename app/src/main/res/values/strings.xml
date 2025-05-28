@@ -28,4 +28,5 @@
     <string name="create_your_account">Create Your Account</string>
     <string name="name">Name</string>
     <string name="already_have_an_account">Already have an account ?</string>
+    <string name="todo">TODO</string>
 </resources>
