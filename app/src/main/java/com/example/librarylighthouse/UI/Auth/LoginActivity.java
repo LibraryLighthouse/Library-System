@@ -19,6 +19,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.librarylighthouse.ApiServices;
 import com.example.librarylighthouse.MainActivity;
 import com.example.librarylighthouse.R;
+import com.example.librarylighthouse.TestActivity;
 import com.example.librarylighthouse.User;
 
 import org.json.JSONException;
@@ -52,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
             loginUser();
         });
         if (sharedPreferences.getString("status", "").equals("true")) {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            startActivity(new Intent(getApplicationContext(), TestActivity.class));
             finish();
         }
         TextView textView = findViewById(R.id.btnToRegister);
@@ -67,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
         email = textEmail.getText().toString();
         password = textPassword.getText().toString();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.31.206:8000/")
+                .baseUrl("http://192.168.21.233:8000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ApiServices apiServices = retrofit.create(ApiServices.class);
@@ -80,9 +81,8 @@ public class LoginActivity extends AppCompatActivity {
                     try {
                         String res =  response.body().string();
                         JSONObject jsonObject = new JSONObject(res);
-                        JSONObject data = jsonObject.getJSONObject("data");
-                        JSONObject user = data.getJSONObject("user");
-                        String token = data.getString("token");
+                        JSONObject user = jsonObject.getJSONObject("user");
+                        String token = jsonObject.getString("token");
                         String name = user.getString("name");
                         String email = user.getString("email");
                         editor.putString("token", token);

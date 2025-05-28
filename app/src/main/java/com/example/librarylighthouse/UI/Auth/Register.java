@@ -48,7 +48,7 @@ public class Register extends AppCompatActivity {
             Toast.makeText(this, "Please enter a name", Toast.LENGTH_SHORT).show();
         }
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.31.206:8000/")
+                .baseUrl("http://192.168.21.233:8000/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ApiServices apiServices = retrofit.create(ApiServices.class);
