@@ -1,0 +1,10 @@
+query Books {
+    books {
+        documentId
+        book_title
+        book_description
+        ISBN
+        page
+        year
+    }
+}

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.apollographql.apollo") version "4.2.0"
 }
 
 android {
@@ -8,7 +9,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.librarylighthouse"
+        applicationId = "com.ite.librarylighthouse"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -36,8 +37,17 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-}
 
+}
+apollo {
+    service("service") {
+        packageName.set("com.example.graphql")
+        introspection {
+            endpointUrl.set("http://localhost:84/graphql")
+            schemaFile.set(file("src/main/graphql/com/example/librarylighthouse/shema.sdl"))
+        }
+    }
+}
 dependencies {
 
     implementation(libs.appcompat)
