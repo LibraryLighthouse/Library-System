@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.librarylighthouse.UI.Home.HomeFragment;
+import com.example.librarylighthouse.UI.Home.LibraryFragment;
+import com.example.librarylighthouse.UI.Home.ListFragment;
+import com.example.librarylighthouse.UI.Home.ProfileFragment;
 import com.example.librarylighthouse.databinding.ActivityMainBinding;
 
 
@@ -23,10 +26,12 @@ public class MainActivity extends AppCompatActivity {
             int itemId = item.getItemId();
             if (itemId == R.id.nav_home) {
                 LoadFragment(new HomeFragment());
-            } else if (itemId == R.id.nav_search) {
-                LoadFragment(new NotificationFragment());
+            } else if (itemId == R.id.nav_list) {
+                LoadFragment(new ListFragment());
             } else if (itemId == R.id.nav_user) {
                 LoadFragment(new ProfileFragment());
+            } else if (itemId == R.id.nav_library) {
+                LoadFragment(new LibraryFragment());
             }else {
                 return false;
             }
