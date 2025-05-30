@@ -1,0 +1,16 @@
+query Books {
+    books {
+        documentId
+        book_title
+        book_description
+        ISBN
+        page
+        year
+        publishers {
+            publisher_name
+        }
+        book_status
+        language
+        time_reading
+    }
+}
