@@ -39,7 +39,15 @@ android {
     }
 
 }
-
+apollo {
+    service("service") {
+        packageName.set("src.main.graphql")
+        introspection {
+            endpointUrl.set("http://localhost:84/graphql")
+            schemaFile.set(file("src/main/graphql/com/example/librarylighthouse/schema.sdl"))
+        }
+    }
+}
 dependencies {
 
     implementation(libs.appcompat)
