@@ -11,6 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.librarylighthouse.R;
 
 public class BookActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
