@@ -29,11 +29,13 @@ public class BookFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
+        super.onCreateView(inflater, container, savedInstanceState);
+        fragmentBookBinding = FragmentBookBinding.inflate(inflater, container, false);
         fetchBook();
+
         return fragmentBookBinding.getRoot();
     }
-    private void fetchBook() {
+    private void fetchBook(){
         ApiServices apiServices = RetrofitClient.getClient().create(ApiServices.class);
         apiServices.getBooks().enqueue(new Callback<List<Book>>() {
             @Override
@@ -43,11 +45,12 @@ public class BookFragment extends Fragment {
                     BookAdapter adapter = new BookAdapter(getContext(), productList);
                     fragmentBookBinding.recyclerView.setAdapter(adapter); // Make sure your RecyclerView ID is correct
                 }
+
             }
+
             @Override
             public void onFailure(Call<List<Book>> call, Throwable t) {
-                Toast.makeText(getContext(), "Failed to load products", Toast.LENGTH_SHORT).show();
-
+                Log.e("API_ERROR", "Failed to load products", t);
             }
         });
 

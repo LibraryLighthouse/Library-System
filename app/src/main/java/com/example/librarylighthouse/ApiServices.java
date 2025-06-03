@@ -28,7 +28,7 @@ public interface ApiServices {
     Call<ResponseBody> logoutUser(
             @Header("Authorization") String token
     );
-    @GET("/api/books")
+    @GET("products.json")
     Call<List<Book>> getBooks();
 
 }

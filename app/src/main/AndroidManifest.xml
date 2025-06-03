@@ -17,7 +17,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="33">
         <activity
-            android:name=".BookDetailActivity"
+            android:name=".DetailBookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Book.BookDetailActivity"
             android:exported="false"
             android:theme="@style/Theme.LibraryLighthouse" />
         <activity

@@ -18,6 +18,7 @@
             android:id="@+id/book_image"
             android:layout_width="match_parent"
             android:layout_height="180dp"
+            android:contentDescription="@string/todo"
             android:scaleType="centerCrop" />
 
         <TextView

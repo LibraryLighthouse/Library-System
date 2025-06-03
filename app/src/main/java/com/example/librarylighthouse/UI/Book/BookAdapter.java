@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public  class BookAdapter extends RecyclerView.Adapter <BookAdapter.ViewHolder> {
+public  class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
     private Context context;
     private List<Book> bookList;
 
@@ -24,7 +24,7 @@ public  class BookAdapter extends RecyclerView.Adapter <BookAdapter.ViewHolder> 
         this.context = context;
         this.bookList = books;
     }
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public  class ViewHolder extends RecyclerView.ViewHolder{
         ImageView imageView;
         TextView name, description, author;
 
@@ -39,25 +39,29 @@ public  class BookAdapter extends RecyclerView.Adapter <BookAdapter.ViewHolder> 
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public BookAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.item_book, parent, false);
         return new ViewHolder(view);
     }
+
     @Override
     public void onBindViewHolder(@NonNull BookAdapter.ViewHolder holder, int position) {
-        Book product = bookList.get(position);
-        holder.name.setText(product.getName());
-        holder.description.setText(product.getDescription());
-        holder.author.setText(product.getAuthor());
-        Picasso.get().load(product.getImage()).into(holder.imageView);
-
+        Book book = bookList.get(position);
+        holder.name.setText(book.getName());
+        holder.description.setText(book.getDescription());
+        holder.author.setText(book.getAuthor());
+        Picasso.get().load(book.getImage()).into(holder.imageView);
         holder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, BookDetailActivity.class);
-            intent.putExtra("name", product.getName());
-            intent.putExtra("image", product.getImage());
-            intent.putExtra("author", product.getAuthor());    // double or float (match in detail)
-            intent.putExtra("description", product.getDescription());
+            intent.putExtra("name", book.getName());
+            intent.putExtra("image", book.getImage());
+            intent.putExtra("author", book.getAuthor());      // double
+            intent.putExtra("description", book.getDescription());
             context.startActivity(intent);
         });
+    }
+    @Override
+    public int getItemCount() {
+        return bookList.size();
     }
 }
