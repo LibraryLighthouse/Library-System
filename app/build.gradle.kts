@@ -9,7 +9,7 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.ite.librarylighthouse"
+        applicationId = "com.example.librarylighthouse"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -40,7 +40,7 @@ android {
 
 }
 apollo {
-    service("service") {
+    service("librarylighthouse") {
         packageName.set("src.main.graphql")
         introspection {
             endpointUrl.set("http://localhost:84/graphql")
@@ -65,4 +65,6 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.apollo.runtime)
+    implementation(libs.hilt.android)
+    annotationProcessor(libs.dagger.compiler)
 }

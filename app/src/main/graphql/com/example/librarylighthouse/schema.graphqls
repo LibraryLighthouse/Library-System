@@ -564,16 +564,12 @@ type BookEntityResponseCollection {
   pageInfo: Pagination!
 }
 
-type BookRelationResponseCollection {
-  nodes: [Book!]!
-}
-
 input BookCategoryFiltersInput {
   documentId: IDFilterInput
 
   category_name: StringFilterInput
 
-  books: BookFiltersInput
+  book: BookFiltersInput
 
   createdAt: DateTimeFilterInput
 
@@ -591,9 +587,9 @@ input BookCategoryFiltersInput {
 input BookCategoryInput {
   category_name: String
 
-  category_cover: [ID]
+  book: ID
 
-  books: [ID]
+  category_cover: [ID]
 
   publishedAt: DateTime
 }
@@ -602,6 +598,8 @@ type BookCategory {
   documentId: ID!
 
   category_name: String!
+
+  book: Book
 
   category_cover_connection(filters: UploadFileFiltersInput, pagination: PaginationArg = {
 
@@ -612,16 +610,6 @@ type BookCategory {
 
   }
   , sort: [String] = []): [UploadFile]!
-
-  books_connection(filters: BookFiltersInput, pagination: PaginationArg = {
-
-  }
-  , sort: [String] = []): BookRelationResponseCollection
-
-  books(filters: BookFiltersInput, pagination: PaginationArg = {
-
-  }
-  , sort: [String] = []): [Book]!
 
   createdAt: DateTime
 
