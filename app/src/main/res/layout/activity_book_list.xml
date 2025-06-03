@@ -17,25 +17,26 @@
         android:layout_marginTop="16dp">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="119dp"
             android:layout_height="wrap_content"
-            android:text="Sci-Fi"
-            android:backgroundTint="#EEEEEE"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#A28D4F"
+            android:text="Sci-Fi" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="119dp"
             android:layout_height="wrap_content"
-            android:text="Science"
-            android:backgroundTint="#EEEEEE"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#A28D4F"
+            android:text="Science" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
-            android:text="Romance"
-            android:backgroundTint="#EEEEEE" />
+            android:backgroundTint="#A28D4F"
+            android:text="Romance" />
     </LinearLayout>
+
 
     <!-- Book List -->
     <ScrollView
