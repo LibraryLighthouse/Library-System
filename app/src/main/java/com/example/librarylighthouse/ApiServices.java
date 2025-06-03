@@ -1,5 +1,9 @@
 package com.example.librarylighthouse;
 
+import com.example.librarylighthouse.UI.Book.Book;
+
+import java.util.List;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -24,5 +28,7 @@ public interface ApiServices {
     Call<ResponseBody> logoutUser(
             @Header("Authorization") String token
     );
+    @GET("products.json")
+    Call<List<Book>> getBooks();
 
 }

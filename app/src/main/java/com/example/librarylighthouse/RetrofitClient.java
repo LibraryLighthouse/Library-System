@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
-    private static final String BASE_URL = "https://yourapi.com";
+    private static final String BASE_URL = "https://raw.githubusercontent.com/kimsongsao/node-rest-api-with-jwt/refs/heads/main/images/";
     private static Retrofit retrofit = null;
 
     public static Retrofit getClient() {
