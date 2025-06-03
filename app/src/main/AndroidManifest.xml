@@ -16,6 +16,17 @@
         android:theme="@style/Theme.LibraryLighthouse"
         android:usesCleartextTraffic="true"
         tools:targetApi="33">
+
+        <activity
+            android:name=".UI.Auth.Register"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".DetailBookActivity"
             android:exported="false" />
