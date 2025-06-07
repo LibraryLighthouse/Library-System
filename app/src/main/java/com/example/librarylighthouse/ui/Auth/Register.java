@@ -1,4 +1,4 @@
-package com.example.librarylighthouse.UI.Auth;
+package com.example.librarylighthouse.ui.Auth;
 
 
 import android.content.Intent;

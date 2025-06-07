@@ -1,4 +1,4 @@
-package com.example.librarylighthouse.Model;
+package com.example.librarylighthouse.useCase;
 
 public class LoginResponse {
     private String token;

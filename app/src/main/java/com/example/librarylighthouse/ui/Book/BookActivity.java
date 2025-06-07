@@ -1,4 +1,4 @@
-package com.example.librarylighthouse.UI.Book;
+package com.example.librarylighthouse.ui.Book;
 
 import android.os.Bundle;
 

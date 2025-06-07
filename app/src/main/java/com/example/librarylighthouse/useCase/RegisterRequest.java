@@ -1,4 +1,4 @@
-package com.example.librarylighthouse.Model;
+package com.example.librarylighthouse.useCase;
 
 public class RegisterRequest {
     private String name;
